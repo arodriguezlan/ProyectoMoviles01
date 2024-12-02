@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "303994308170",
+    "firebase_url": "https://northwindexamen-default-rtdb.firebaseio.com",
+    "project_id": "northwindexamen",
+    "storage_bucket": "northwindexamen.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303994308170:android:f2610708008a4a3e1948b3",
+        "android_client_info": {
+          "package_name": "com.losmugiwaras.proyectomoviles01"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6uY2Y8d3_JnUxAGe51fnz6rnl2r2MPns"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
