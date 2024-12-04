@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.losmugiwaras.proyectomoviles01"
-    compileSdk = 34
+    compileSdk = 35
 
     android {
         defaultConfig {

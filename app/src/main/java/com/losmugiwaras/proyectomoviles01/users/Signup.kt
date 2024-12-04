@@ -26,6 +26,8 @@ class SignupActivity : AppCompatActivity() {
     private lateinit var txtRContra: EditText
     private lateinit var txtRreContra: EditText
     private lateinit var btnRegistrarU: Button
+    private lateinit var btnRegistrarGooogle: Button
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,9 +38,15 @@ class SignupActivity : AppCompatActivity() {
         txtRContra = findViewById(R.id.txtRContra)
         txtRreContra = findViewById(R.id.txtRreContra)
         btnRegistrarU = findViewById(R.id.btnRegistrarU)
+        btnRegistrarU = findViewById(R.id.btnRegistrarU)
+
 
         btnRegistrarU.setOnClickListener {
             registrarUsuario()
+        }
+
+        btnRegistrarGooogle.setOnClickListener {
+            Signupgoogle()
         }
 
     }
@@ -99,5 +107,9 @@ class SignupActivity : AppCompatActivity() {
             }
         }
     }
+
+}
+
+class Signupgoogle {
 
 }
