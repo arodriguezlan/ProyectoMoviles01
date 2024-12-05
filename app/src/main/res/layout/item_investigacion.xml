@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Filtro por autor (AutoCompleteTextView) -->
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteAutores"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Seleccione un autor"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp"
+        android:minHeight="48dp"
+        android:textSize="16sp"
+        android:importantForAccessibility="yes"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <!-- Filtro por área (CheckBoxes) -->
+    <LinearLayout
+        android:id="@+id/linearLayoutAreas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <CheckBox
+            android:id="@+id/checkArea1"
+            android:text="Área 1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <CheckBox
+            android:id="@+id/checkArea2"
+            android:text="Área 2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+
+    <!-- Filtro por ciclo escolar (RadioGroup) -->
+    <RadioGroup
+        android:id="@+id/radioGroupCicloEscolar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/radioCiclo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ciclo 1" />
+
+        <RadioButton
+            android:id="@+id/radioCiclo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ciclo 2" />
+    </RadioGroup>
+
+    <!-- Filtro por fecha (RadioGroup) -->
+    <RadioGroup
+        android:id="@+id/radioGroupFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/radioMasRecientes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Más recientes" />
+
+        <RadioButton
+            android:id="@+id/radioMasAntiguos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Más antiguos" />
+    </RadioGroup>
+
+    <!-- Botón para Resetear filtros -->
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resetear Filtros"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/black"/> <!-- Removed selector -->
+
+    <!-- RecyclerView para mostrar los datos filtrados -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewInvestigaciones"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"/>
+</LinearLayout>

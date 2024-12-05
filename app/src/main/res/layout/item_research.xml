@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- Title of the research -->
+    <TextView
+        android:id="@+id/researchTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Research Title"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+    <!-- Topic of the research -->
+    <TextView
+        android:id="@+id/researchTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Research Topic"
+        android:textSize="16sp"
+        android:paddingBottom="4dp"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+    <!-- Academic Grade of the research -->
+    <TextView
+        android:id="@+id/researchGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grade"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+    <!-- A divider between research items -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+</LinearLayout>

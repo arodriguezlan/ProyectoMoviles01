@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -10,15 +14,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoMoviles01"
         tools:targetApi="31">
+
+
+
+        <!-- Actividad principal que se lanza al inicio -->
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name="losmugiwaras.ProyectoMoviles01.MainActivity"
+            android:exported="true"
+            tools:ignore="MissingClass">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Declaración de la actividad LoginActivity -->
+        <activity android:name=".users.LoginActivity" />
+        <activity android:name=".users.SignupActivity" />
+
+
     </application>
 
 </manifest>

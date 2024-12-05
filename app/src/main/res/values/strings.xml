@@ -17,4 +17,10 @@
     <string name="default_web_client_id">default_web_client_id</string>
 
 
+        <string name="prompt_autor">Seleccione un autor</string>
+        <string name="prompt_area">Seleccione un área</string>
+        <string name="prompt_ciclo_escolar">Seleccione un ciclo escolar</string>
+        <string name="prompt_fecha">Ordenar por fecha</string>
+
+
 </resources>

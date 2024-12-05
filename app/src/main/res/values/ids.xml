@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="researchTitle" type="id">researchTitle</item>
+    <item name="researchTopic" type="id">researchTopic</item>
+    <item name="researchGrade" type="id">researchGrade</item>
+    <item name="textViewGrade" type="id" />
+    <item name="textViewTitle" type="id" />
+    <item name="textViewTopic" type="id" />
+    <item name="textViewDescription" type="id" />
+    <item name="recyclerViewComments" type="id" />
+    <item name="commentInput" type="id" />
+    <item name="ratingBar" type="id" />
+    <item name="submitButton" type="id" />
+</resources>

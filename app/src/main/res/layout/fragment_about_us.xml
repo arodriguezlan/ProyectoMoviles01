@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Título para la sección de "Sobre Nosotros" -->
+    <TextView
+        android:id="@+id/textViewAboutUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sobre Nosotros"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"/>
+
+    <!-- Información estática sobre los desarrolladores -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desarrollado por: \nJuan Pérez, María López, etc."
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:gravity="center"/>
+
+</LinearLayout>
